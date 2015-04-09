@@ -13,7 +13,8 @@
 		3C9100321AD4BA44001B0CE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9100311AD4BA44001B0CE7 /* Images.xcassets */; };
 		3C9100351AD4BA44001B0CE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9100331AD4BA44001B0CE7 /* LaunchScreen.xib */; };
 		3C9100411AD4BA44001B0CE7 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9100401AD4BA44001B0CE7 /* TodoTests.swift */; };
-		3C91004A1AD4C968001B0CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C91002E1AD4BA44001B0CE7 /* Main.storyboard */; };
+		3CB4C29D1AD63DF1006454CD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91002C1AD4BA44001B0CE7 /* ListViewController.swift */; };
+		3CB52D131AD63D3400D60D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C91002E1AD4BA44001B0CE7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,7 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C91004A1AD4C968001B0CE7 /* Main.storyboard in Resources */,
+				3CB52D131AD63D3400D60D91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB4C29D1AD63DF1006454CD /* ListViewController.swift in Sources */,
 				3C9100411AD4BA44001B0CE7 /* TodoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

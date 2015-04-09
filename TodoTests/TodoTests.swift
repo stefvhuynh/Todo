@@ -10,25 +10,39 @@ import UIKit
 import XCTest
 
 class TodoTests: XCTestCase {
+    var listViewController: ListViewController!
     
     override func setUp() {
         super.setUp()
+        
+        let storyboard = UIStoryboard(
+            name: "Main",
+            bundle: NSBundle(forClass: self.dynamicType)
+        )
+        
+        listViewController =
+            storyboard.instantiateViewControllerWithIdentifier(
+                "ListViewControllerId"
+            ) as ListViewController
+        
+        let _ = listViewController.view
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testTableViewConnected() {
+        let tableView = listViewController.tableView
+        
+        XCTAssertNotNil(tableView, "tableView is not connected")
+        XCTAssertTrue(
+            tableView.delegate === listViewController,
+            "tableView.delegate is not set to listViewController"
+        )
+        XCTAssertTrue(
+            tableView.dataSource === listViewController,
+            "tableView.dataSource is not set to listViewController"
+        )
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

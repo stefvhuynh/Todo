@@ -8,7 +8,7 @@
         <!--List View Controller-->
         <scene sceneID="bID-hO-ioc">
             <objects>
-                <viewController id="Jk9-aK-hzI" customClass="ListViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewControllerId" id="Jk9-aK-hzI" customClass="ListViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Qz-6e-7hV"/>
                         <viewControllerLayoutGuide type="bottom" id="xNN-dE-ONg"/>
@@ -38,7 +38,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="Jk9-aK-hzI" id="hOy-xH-Aly"/>
+                                    <outlet property="dataSource" destination="Jk9-aK-hzI" id="jVQ-Qr-37R"/>
                                     <outlet property="delegate" destination="Jk9-aK-hzI" id="YqF-eF-Ywc"/>
                                 </connections>
                             </tableView>
@@ -54,6 +54,9 @@
                             <constraint firstItem="D1g-dG-0WH" firstAttribute="top" secondItem="FXz-Yp-kBD" secondAttribute="bottom" id="y01-qL-Obw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="D1g-dG-0WH" id="Ap5-fg-zii"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDH-hk-tZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
