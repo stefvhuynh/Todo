@@ -27,4 +27,8 @@ class DataControllerTests: XCTestCase {
             "Shared instance is not unique"
         )
     }
+    
+    func testTodoItemsInit() {
+        XCTAssertNotNil(DataController.instance.todoItems, "todoItems is nil")
+    }
 }
