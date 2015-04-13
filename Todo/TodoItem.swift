@@ -9,10 +9,11 @@
 class TodoItem {
     var title: String
     var description: String?
-    var completed = false
+    var completed: Bool
     
     init(title: String, description: String? = nil) {
         self.title = title
         self.description = description
+        self.completed = false
     }
 }

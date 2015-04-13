@@ -19,6 +19,8 @@
 		3CC371451ADB81F5006101B6 /* TodoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371431ADB81F5006101B6 /* TodoItemTests.swift */; };
 		3CC371471ADB82CA006101B6 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371461ADB82CA006101B6 /* TodoItem.swift */; };
 		3CC371481ADB82CA006101B6 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371461ADB82CA006101B6 /* TodoItem.swift */; };
+		3CC3714A1ADB8B85006101B6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371491ADB8B85006101B6 /* DataController.swift */; };
+		3CC3714B1ADB8B85006101B6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371491ADB8B85006101B6 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		3CB4C29E1AD644B5006454CD /* ListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
 		3CC371431ADB81F5006101B6 /* TodoItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemTests.swift; sourceTree = "<group>"; };
 		3CC371461ADB82CA006101B6 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		3CC371491ADB8B85006101B6 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 				3C91002A1AD4BA44001B0CE7 /* AppDelegate.swift */,
 				3C91002C1AD4BA44001B0CE7 /* ListViewController.swift */,
 				3CC371461ADB82CA006101B6 /* TodoItem.swift */,
+				3CC371491ADB8B85006101B6 /* DataController.swift */,
 				3C91002E1AD4BA44001B0CE7 /* Main.storyboard */,
 				3C9100311AD4BA44001B0CE7 /* Images.xcassets */,
 				3C9100331AD4BA44001B0CE7 /* LaunchScreen.xib */,
@@ -226,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C91002D1AD4BA44001B0CE7 /* ListViewController.swift in Sources */,
+				3CC3714A1ADB8B85006101B6 /* DataController.swift in Sources */,
 				3CC371471ADB82CA006101B6 /* TodoItem.swift in Sources */,
 				3C91002B1AD4BA44001B0CE7 /* AppDelegate.swift in Sources */,
 			);
@@ -236,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC371481ADB82CA006101B6 /* TodoItem.swift in Sources */,
+				3CC3714B1ADB8B85006101B6 /* DataController.swift in Sources */,
 				3CB4C29F1AD644B5006454CD /* ListViewControllerTests.swift in Sources */,
 				3CC371451ADB81F5006101B6 /* TodoItemTests.swift in Sources */,
 				3CB4C29D1AD63DF1006454CD /* ListViewController.swift in Sources */,

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ListViewController:
-    UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListViewController: UIViewController,
+                          UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
@@ -21,19 +21,16 @@ class ListViewController:
         super.didReceiveMemoryWarning()
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(tableView: UITableView,
-        numberOfRowsInSection section: Int) -> Int {
+                   numberOfRowsInSection section: Int) -> Int {
                     
         return 3
     }
     
     func tableView(tableView: UITableView,
-        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            
+                   cellForRowAtIndexPath
+                   indexPath: NSIndexPath) -> UITableViewCell {
+                    
         var cell = UITableViewCell(
             style: UITableViewCellStyle.Default,
             reuseIdentifier: "ListTableCell"
