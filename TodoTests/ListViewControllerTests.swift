@@ -23,7 +23,7 @@ class ListViewControllerTests: XCTestCase {
         listViewController =
             storyboard.instantiateViewControllerWithIdentifier(
                 "ListViewControllerId"
-            ) as ListViewController
+            ) as! ListViewController
         
         let _ = listViewController.view
     }

@@ -21,6 +21,7 @@
 		3CC371481ADB82CA006101B6 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371461ADB82CA006101B6 /* TodoItem.swift */; };
 		3CC3714A1ADB8B85006101B6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371491ADB8B85006101B6 /* DataController.swift */; };
 		3CC3714B1ADB8B85006101B6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC371491ADB8B85006101B6 /* DataController.swift */; };
+		3CDF33B61ADB9D1B00A25FCA /* DataControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF33B51ADB9D1B00A25FCA /* DataControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3CC371431ADB81F5006101B6 /* TodoItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemTests.swift; sourceTree = "<group>"; };
 		3CC371461ADB82CA006101B6 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		3CC371491ADB8B85006101B6 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		3CDF33B51ADB9D1B00A25FCA /* DataControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				3C9100401AD4BA44001B0CE7 /* TodoTests.swift */,
 				3CB4C29E1AD644B5006454CD /* ListViewControllerTests.swift */,
+				3CDF33B51ADB9D1B00A25FCA /* DataControllerTests.swift */,
 				3CC371431ADB81F5006101B6 /* TodoItemTests.swift */,
 				3C91003E1AD4BA44001B0CE7 /* Supporting Files */,
 			);
@@ -245,6 +248,7 @@
 				3CB4C29F1AD644B5006454CD /* ListViewControllerTests.swift in Sources */,
 				3CC371451ADB81F5006101B6 /* TodoItemTests.swift in Sources */,
 				3CB4C29D1AD63DF1006454CD /* ListViewController.swift in Sources */,
+				3CDF33B61ADB9D1B00A25FCA /* DataControllerTests.swift in Sources */,
 				3C9100411AD4BA44001B0CE7 /* TodoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

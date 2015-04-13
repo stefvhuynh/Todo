@@ -24,7 +24,7 @@ class ListViewController: UIViewController,
     func tableView(tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
                     
-        return 3
+        return DataController.instance.todoItems.count
     }
     
     func tableView(tableView: UITableView,
@@ -35,8 +35,9 @@ class ListViewController: UIViewController,
             style: UITableViewCellStyle.Default,
             reuseIdentifier: "ListTableCell"
         )
-            
-        cell.textLabel!.text = "Hello, world"
+        cell.textLabel!.text =
+            DataController.instance.todoItems[indexPath.row].title
+                    
         return cell
     }
 }
