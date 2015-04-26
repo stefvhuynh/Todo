@@ -45,4 +45,15 @@ class ListViewControllerTests: XCTestCase {
             "tableView.dataSource is not set to listViewController"
         )
     }
+    
+    func testTableViewRowsInSection() {
+        DataController.instance.todoItems = [
+            TodoItem(title: "item1"),
+            TodoItem(title: "item2")
+        ]
+        var tableView = listViewController.tableView
+        var rows = listViewController.tableView(tableView, numberOfRowsInSection: 1)
+        
+        XCTAssertEqual(rows, 2, "Number of rows does not match data")
+    }
 }

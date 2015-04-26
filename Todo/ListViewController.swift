@@ -35,8 +35,11 @@ class ListViewController: UIViewController,
             style: UITableViewCellStyle.Default,
             reuseIdentifier: "ListTableCell"
         )
-        cell.textLabel!.text =
-            DataController.instance.todoItems[indexPath.row].title
+
+        if let textLabel = cell.textLabel {
+            textLabel.text =
+                DataController.instance.todoItems[indexPath.row].title
+        }
                     
         return cell
     }
