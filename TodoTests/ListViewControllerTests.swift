@@ -63,4 +63,27 @@ class ListViewControllerTests: XCTestCase {
         
         XCTAssertEqual(rows, 2, "Number of rows does not match data")
     }
+    
+    func testTableViewCellAtIndexPath() {
+        var tableView = listViewController.tableView
+        var cell1 = listViewController.tableView(
+            tableView,
+            cellForRowAtIndexPath: NSIndexPath(forRow: 0, inSection: 0)
+        )
+        var cell2 = listViewController.tableView(
+            tableView,
+            cellForRowAtIndexPath: NSIndexPath(forRow: 1, inSection: 0)
+        )
+        
+        XCTAssertEqual(
+            cell1.textLabel!.text!,
+            "item1",
+            "Table cell text does not match data"
+        )
+        XCTAssertEqual(
+            cell2.textLabel!.text!,
+            "item2",
+            "Table cell text does not match data"
+        )
+    }
 }
