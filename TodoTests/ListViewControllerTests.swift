@@ -32,7 +32,7 @@ class ListViewControllerTests: XCTestCase {
             ) as! ListViewController
         
         
-        listViewController.DataModule = MockDataController.self
+        listViewController.dataModule = MockDataController.self
         let _ = listViewController.view
     }
     

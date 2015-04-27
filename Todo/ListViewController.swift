@@ -12,12 +12,12 @@ class ListViewController: UIViewController,
                           UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
-    var DataModule = DataController.self
+    var dataModule = DataController.self
     var todoItems = [TodoItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        todoItems = DataModule.loadTodoItems()
+        todoItems = dataModule.loadTodoItems()
     }
 
     override func didReceiveMemoryWarning() {
