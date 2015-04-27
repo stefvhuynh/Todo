@@ -6,16 +6,19 @@
 //  Copyright (c) 2015 Stefan Huynh. All rights reserved.
 //
 
+import UIKit
+
 class DataController {
-    // This creates a singleton that we can use across the app.
-    static let instance = DataController()
+    static var database = NSUserDefaults.self
     
-    var todoItems: [TodoItem]
-    
-    init() {
-        self.todoItems = [
-            TodoItem(title: "Learn Swift", description: "Build cool apps."),
-            TodoItem(title: "Solve world hunger")
-        ]
+    class func loadTodoItems() -> [TodoItem] {
+        let savedTodoItems: [AnyObject]? =
+            database.standardUserDefaults().arrayForKey("todoItems")
+        
+        if savedTodoItems != nil {
+            return savedTodoItems as! [TodoItem]
+        }
+        
+        return [TodoItem]()
     }
 }

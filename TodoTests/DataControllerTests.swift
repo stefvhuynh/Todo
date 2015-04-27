@@ -11,24 +11,29 @@ import XCTest
 class DataControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
+        
+        class MockNSUserDefaults: NSUserDefaults {
+            override class func standardUserDefaults() -> NSUserDefaults {
+                return MockNSUserDefaults()
+            }
+            
+            override func arrayForKey(defaultName: String) -> [AnyObject]? {
+                return [TodoItem(title: "item1"), TodoItem(title: "item2")]
+            }
+        }
+        
+        DataController.database = MockNSUserDefaults.self
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testSharedInstanceNotNil() {
-        XCTAssertNotNil(DataController.instance, "Shared instance is nil")
-    }
-    
-    func testSharedInstanceUnique() {
-        XCTAssertFalse(
-            DataController.instance === DataController(),
-            "Shared instance is not unique"
+    func testLoadTodoItems() {
+        XCTAssertEqual(
+            DataController.loadTodoItems().count,
+            2,
+            "loadTodoItems did not return the right number of todos"
         )
-    }
-    
-    func testTodoItemsInit() {
-        XCTAssertNotNil(DataController.instance.todoItems, "todoItems is nil")
     }
 }
